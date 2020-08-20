@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Rubik:wght@400;500&display=swap');
+
+:root{
+    --primary-color: #372857;
+    --blue-color: #00EBFF;
+    --pink-color: #FF2FCC;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;  
+    font-family: 'Montserrat', sans-serif;  
+}
+body{   
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--primary-color);
+}
+a, p, h1{
+    text-decoration: none;
+    color: #fff;
+}
+li{
+    list-style: none;
+}
+.container{  
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    
+}
+.container header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.container header a img{
+    height: 2rem;
+}
+.container header nav ul{
+    font-weight: 300;
+    
+}
+.container header nav ul li{
+    display: inline;
+    border-right: 1px solid #fff;
+    padding-right: .2rem;
+    text-align: center;
+    
+}
+.container header nav ul li:last-child{   
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+.home .heading-text{  
+    padding: 3rem 0;
+    margin-top: 4.2rem;
+}
+.home .heading-text > p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.8rem;
+}
+.home .heading-text .heading-paragraph {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 300;
+}
+
+.home .heading-text h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 5rem;
+}
+.home .heading-text button{
+    padding: .6rem 2.2rem;
+    border: none;
+    border-radius: 2rem;
+    background: linear-gradient(70deg, var(--pink-color) 30%, var(--blue-color) 100%);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+
+@media (min-width: 1024px){
+    .container header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+        width: 100%;
+        padding: 1rem 0;
+    }
+    .home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
